@@ -235,8 +235,7 @@ feature: the tests failed as they should.
 ## Limitations
 
 - The whole index is kept in memory, so the number of keys is limited by RAM (values stay on disk).
-- One process at a time; there is no network server, so use [SimpleHTTPd](../simplehttpd) for that kind of
-  project.
+- One process at a time; there is no network server.
 - No transactions or multi-key atomic operations; each command is one record.
 - `KEYS` lists by prefix only; there are no range scans or patterns.
 - Expired keys are removed lazily (when touched, listed or compacted), not by a background timer.
