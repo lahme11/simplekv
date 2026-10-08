@@ -1,0 +1,17 @@
+# Build output
+**/bin/simplekv
+Stage3/bin/
+*.o
+
+# Databases created while trying things out
+*.skv
+*.skv.compact
+*.kvlog
+
+# Superpowers scratch
+.superpowers/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
