@@ -5,9 +5,7 @@ and POSIX calls: `pread`/`pwrite`, `fsync`, `ftruncate`, `flock` and `rename`. E
 of checksummed records. The database survives restarts and crashes, compacts itself, and refuses to be opened by
 two programs at once.
 
-It completes a set of three C projects. [SimpleShell](../2026-simpleshell-main) runs programs (`fork`/`exec`) and
-[SimpleHTTPd](../simplehttpd) talks over the network (sockets, signals). SimpleKV covers storage: a binary file
-format, checksums, durability, crash recovery, compaction, file locking and a resizable hash table.
+SimpleKV covers storage: a binary file format, checksums, durability, crash recovery, compaction, file locking and a resizable hash table.
 
 It comes in two versions, plus a test suite:
 
